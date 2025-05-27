@@ -1,0 +1,57 @@
+<html>
+<html>
+    <head>
+        <title>Selamat Ulang Tahun Sayang</title>
+        <style>
+            body {
+                background-color: #f2f2f2;
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            image {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin: 20px%;
+            }
+            audio {
+                margin: 20%px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Selamat Ulang Tahun Isabela!</h1>
+        <img class="foto" src="c:\Users\User\OneDrive\Documents\isabela1.jpg" alt="Foto Seseorang">
+        <p>Semoga hari ulang tahun sayang ini menjadi hari yang spesial dan penuh kebahagiaan ,sehat selalu ya sayang ,panjang umur,dan dipermudahkan segala urusan
+        </p>
+        
+        <h1>Love You</h1>
+        <button id='btn_music' onclick='music()'>Play/Pause</button>
+        <button id='btn_loveyoutoo' onclick='alert("I <3 U")'>love you too</button>&nbsp;
+        <button id='nolove' onclick='no(this)'
+        style='position:absolute'>NO</button>
+        <audio id='bgMusic' src='c:\Users\User\Downloads\happy birthday1.mp3' loop ></audio>
+    </body>
+    <script>
+        function no(id){
+            var loveyoutoo = document.getElementById('btn_loveyoutoo');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+loveyoutoo.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = i+'px';
+        
+        }
+        var audioPlaying = false;
+        function music(){
+            var audio = document.getElementById("bgMusic");
+            if (!audioPlaying) audio.play();
+            else audio.pause();
+            audioPlaying = !audioPlaying
+        }
+    </script>
+</html>
+    <script> src="main.js"</script>
+    <body>
+<html>
+
+
